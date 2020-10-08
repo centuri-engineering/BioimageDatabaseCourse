@@ -4,7 +4,7 @@ html:
 	mkdir build_html
 	ln -s ../../reveal.js build_html
 	cp -R images build_html
-	pandoc -t revealjs -s main.md -o build_html/main.html --slide-level 3 --mathjax
+	pandoc -t revealjs -V theme=solarized -s main.md -o build_html/main.html --slide-level 3 --mathjax
 
 beamer:
 	rm -Rf build_pdf

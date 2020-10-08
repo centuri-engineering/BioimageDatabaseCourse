@@ -2,10 +2,14 @@
 title: Bio-image databases
 author: Guillaume Gay, CENTURI
 date: 9 Octobre 2020
-fontsize: 11pt
+fontsize: 10pt
 width: 1080
 height: 720
+center: false
 ...
+
+
+<link rel="stylesheet" href="dist/theme/black.css">
 
 
 # Intro
@@ -17,9 +21,10 @@ height: 720
 
 ## Why you are right to take this course
 
-[An excel file does not consitute a database (it is an accounting tool)](https://www.bbc.com/news/uk-54412581)
+![[An excel file does not consitute a database](https://www.bbc.com/news/uk-54422505)](images/excel_error.png)
 
 
+_it is an accounting tool_
 
 ## Who am I?
 
@@ -41,15 +46,14 @@ I also studied how light goes through small apertures:
 
 I used a CCD camera from the late '90s:
 
-![Good old TEA512](images/CCD_princetonTEA512.jpeg)
+![The good old TEA512](images/CCD_princetonTEA512.jpeg)
 
 
 ### Postdocs
 
 - From 2006 to 2012 I was a postdoc in biology & biophysics labs
 
-I started working on microscope images of the fission yeast _Schizosaccharomyces pombe_
-
+I worked on microscope images of the fission yeast _Schizosaccharomyces pombe_
 
 
 ---------
@@ -68,18 +72,28 @@ I started working on microscope images of the fission yeast _Schizosaccharomyces
 
 > Very rich data : relaxation speeds, diffusion/binding coefficients...
 
-I started working on modeling mechanical aspects of mitosis.
+I used these to model  mechanical aspects of mitosis.
 
+
+<video width="600" height="400" controls>
+  <source src="images/JCB_201107124_V1.mp4" type="video/mp4">
+</video>
 
 
 ### Freelance
 
-In 2012 I started working as a freelance to do data analysis and modeling for biology research and biotech. Worked for various labs, for L'Oréal, for a pattent for a antibiotic sensitivity assesment method, or a method to measure eyesight with VR gogles...
+In 2012 I started working as a freelance to do data analysis and modeling for biology research and biotech. Worked for various labs, for L'Oréal, for a small company on a method to measure eyesight with VR gogles...
+
+. . .
 
 ![Model of fold formation](images/fold_ellipsoid.gif)
 
 
-One of my main project is [tyssue](https://github.com/damcb/tyssue) which is a _library_ used to model epithelium.
+One of my main project is [tyssue](https://github.com/damcb/tyssue) which is a **library** used to model epithelium.
+
+## CENTURI
+
+![I'm part of the multi-engineering platform](images/centuri.png)
 
 
 
@@ -93,6 +107,8 @@ One of my main project is [tyssue](https://github.com/damcb/tyssue) which is a _
 
 
 - What was important in Bianca's course? (give me 3 take home messages)
+
+. . .
 
 For me:
 
@@ -109,9 +125,11 @@ For me:
 
 > Images are much more messier
 
+. . .
+
 (_also bioinformaticians are computer scientists, microscopists are physicists_)
 
-
+. . .
 
 > Data management with bioimages is far less advanced.
 
@@ -128,10 +146,10 @@ For me:
 
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
-<p><a href="https://commons.wikimedia.org/wiki/File:Leeuwenhoek_Eschenholz.jpg#/media/File:Leeuwenhoek_Eschenholz.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Leeuwenhoek_Eschenholz.jpg" alt="See caption"></a><br>By Antoni van Leeuwenhoek - T. Cremer, Von der Zellenlehre zur Chromosomentheorie, Springer Verlag Berlin Heidelberg New York Tokyo, 1985, &lt;a href="//commons.wikimedia.org/wiki/Special:BookSources/3-540-13987-7" title="Special:BookSources/3-540-13987-7"&gt;ISBN&amp;nbsp;3-540-13987-7&lt;/a&gt;. &lt;a rel="nofollow" class="external text" href="http://www.t-cremer.de/main_de/cremer/personen/info_T_Cremer.htm#book"&gt;Online Version&lt;/a&gt;. Source given in there: The collected letters from Antoni van Leeuwenhoek, Vol. II, Amsterdam, Sweets and Zeitlinger LTD (1941), Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=3652421">Link</a></p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Leeuwenhoek_Eschenholz.jpg#/media/File:Leeuwenhoek_Eschenholz.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Leeuwenhoek_Eschenholz.jpg" alt="See caption"></a><a href="https://commons.wikimedia.org/w/index.php?curid=3652421">By Antoni van Leeuwenhoek, Public Domain</a></p>
 :::
 ::: {.column width="50%"}
-<p><a href="https://commons.wikimedia.org/wiki/File:Leeuwenhoek_Microscope.png#/media/File:Leeuwenhoek_Microscope.png"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Leeuwenhoek_Microscope.png" alt="See caption"></a><br>By Jeroen Rouwkema, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3657142">Link</a></p>
+<p><a href="https://commons.wikimedia.org/wiki/File:Leeuwenhoek_Microscope.png#/media/File:Leeuwenhoek_Microscope.png"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Leeuwenhoek_Microscope.png" alt="See caption"></a><a href="https://commons.wikimedia.org/w/index.php?curid=3657142">By Jeroen Rouwkema, CC BY-SA 3.0 </a></p>
 :::
 ::::::::::::::
 
@@ -141,7 +159,7 @@ For me:
 
 [Robert Hooke (1635-1703)](https://en.wikipedia.org/wiki/Robert_Hooke)
 
-![Hooke's drawing of a flea](https://en.wikipedia.org/wiki/Robert_Hooke#/media/File:HookeFlea01.jpg)
+<p><a href="https://commons.wikimedia.org/wiki/File:HookeFlea01.jpg#/media/File:HookeFlea01.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HookeFlea01.jpg/1200px-HookeFlea01.jpg" alt="HookeFlea01.jpg"><a href="https://commons.wikimedia.org/w/index.php?curid=117354">National Library of Wales, Public Domain</a></p>
 
 
 First detector is the **eye**, data is registered through simple drawings.
@@ -150,25 +168,25 @@ First detector is the **eye**, data is registered through simple drawings.
 
 [Santiago Ramón y Cajal (1852 - 1934)](https://en.wikipedia.org/wiki/Santiago_Ramón_y_Cajal)
 
+<p><a href="https://commons.wikimedia.org/wiki/File:PurkinjeCell.jpg#/media/File:PurkinjeCell.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/PurkinjeCell.jpg" alt="PurkinjeCell.jpg"></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=612581">Link</a></p>
 
-![Drawing of Purkinje cells (around 1930)](https://en.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal#/media/File:PurkinjeCell.jpg)
-
-The eye + hand are still the best detector in the early XXth century.
+> The eye & hand are still the best detector in the early XXth century.
 
 
 ### First photos
 
 
-[Henry Fox Talbot](https://en.wikipedia.org/wiki/Henry_Fox_Talbot)
+[Henry Fox Talbot (1800 - 1877)](https://en.wikipedia.org/wiki/Henry_Fox_Talbot)
 
 
-![Photomicrograph_of_insect_wings_-_By_William_Henry_Fox_Talbot](https://upload.wikimedia.org/wikipedia/commons/6/68/Photomicrograph_of_insect_wings_-_By_William_Henry_Fox_Talbot.jpg)
+![Photomicrograph of insect wings - By William Henry Fox Talbot](https://upload.wikimedia.org/wikipedia/commons/6/68/Photomicrograph_of_insect_wings_-_By_William_Henry_Fox_Talbot.jpg)
 
 
 See [this article](http://www.microscopy-uk.org.uk/mag/artmar10/history_photomicrography_ed3.pdf)
 
 
 ### First movies
+
 
 [Jean Comandon in 1909](https://www.dailymotion.com/video/x6h3aas)
 
@@ -180,7 +198,7 @@ See [this article](http://www.microscopy-uk.org.uk/mag/artmar10/history_photomic
 
 [Mitosis in Haemanthus katharinae endosperm](http://www.cellimagelibrary.org/images/11952)
 
-<video width="800" height="600" controls>
+<video width="600" height="400" controls>
   <source src="images/11952_web.mp4" type="video/mp4">
 </video>
 
@@ -205,9 +223,14 @@ See [this article](http://www.microscopy-uk.org.uk/mag/artmar10/history_photomic
 
 ### Here comes the CCD
 
+Some details on how it works [here](https://www.princetoninstruments.com/learn/camera-fundamentals/
+)
+
 * Photon counting!
 
 * The image is a quantitative, digital, signal
+
+. . .
 
 > From now on, an image is represented by a matrix of pixels
 
@@ -217,14 +240,22 @@ See [this article](http://www.microscopy-uk.org.uk/mag/artmar10/history_photomic
 
 ### The super resolution revolution
 
-Do you know Abbe low?
+Do you know [Abbe](https://en.wikipedia.org/wiki/Ernst_Abbe) law?
 
-$$r = \frac {\lambda}{2 \sin \mathrm{NA}}  $$
+
+. . .
+
+$$d = \frac {\lambda}{2 n A}  $$
+
+
 
 The minimum size of a motif - for exemple the distance between two spots, observable under a microscope is limited by the objective numerical aperture and the emission wavelength.
 
+. . .
 
-We invented ways to beat that limit (can you site super resolution microscopes?)
+> We invented ways to beat that limit!
+
+(can you cite super resolution methods?)
 
 ### An exemple: STORM:
 
@@ -235,11 +266,16 @@ Now instead of aquiring an image plane by plane (epifluorescence), or by scannin
 
 ### An other: Lattice light sheet
 
-
-https://vimeo.com/109402221
-
-https://vimeo.com/109403013
-
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+<iframe src="https://player.vimeo.com/video/109402221" width="640" height="537" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/109402221">Movie 4 High Resolution</a> from <a href="https://vimeo.com/user33367262">HHMI NEWS</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+:::
+::: {.column width="50%"}
+<iframe src="https://player.vimeo.com/video/109403013" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/109403013">Movie 11 High Resolution</a> from <a href="https://vimeo.com/user33367262">HHMI NEWS</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+:::
+::::::::::::::
 
 
 ### Sreens and plates
@@ -248,13 +284,21 @@ https://vimeo.com/109403013
 
 [An exemple of such system](https://www.perkinelmer.com/fr/product/opera-phenix-system-hh14000000)
 
+![The kind of data aquired](images/sras_screen.png)
 
 
 ## Conclusion
 
 > Image aquisition methods have always been immediatly applied to microscopy
 
+. . .
+
+
 > The eye was surpassed only recently
+
+
+. . .
+
 
 > The image became _digital_ only 20 years ago!
 
@@ -264,43 +308,157 @@ https://vimeo.com/109403013
 
 > What is important to know?
 
+. . .
+
 > Data and metadata
 
-> Cite image formats
+. . .
 
-?
 
-## TIFF (not the Toronto international film festival)
+> Can you cite image formats?
+
+
+
+## TIFF is the norm
+
+
+TIFF is for Tagged Interchange File Format
+
+------------
+
+
+A `TIFF` is a structured file with a header before the data:
+
+![The tiff file structure](images/tiff_spec_fig1.png)
+
+
+-------------
+
+
+> We have tags to store **metadata** !
+
+![Tiff tags](images/tiff_spec_fig2.png)
+
+
+---------------
+
+
+What an 8 by 8 pixel file looks like:
+
+![An 8x8 pixels block](images/ones.tif)
+
+```
+00000000: 4949 2a00 0800 0000 0e00 0001 0400 0100  II*.............
+00000010: 0000 0800 0000 0101 0400 0100 0000 0800  ................
+00000020: 0000 0201 0300 0100 0000 0800 0000 0301  ................
+00000030: 0300 0100 0000 0100 0000 0601 0300 0100  ................
+00000040: 0000 0100 0000 0e01 0200 1200 0000 b600  ................
+00000050: 0000 1101 0400 0100 0000 3001 0000 1501  ..........0.....
+00000060: 0300 0100 0000 0100 0000 1601 0400 0100  ................
+00000070: 0000 0800 0000 1701 0400 0100 0000 4000  ..............@.
+00000080: 0000 1a01 0500 0100 0000 0801 0000 1b01  ................
+00000090: 0500 0100 0000 1001 0000 2801 0300 0100  ..........(.....
+000000a0: 0000 0100 0000 3101 0200 0c00 0000 1801  ......1.........
+000000b0: 0000 0000 0000 7b22 7368 6170 6522 3a20  ......{"shape":
+000000c0: 5b38 2c20 385d 7d00 0000 0000 0000 0000  [8, 8]}.........
+000000d0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+000000e0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+000000f0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000100: 0000 0000 0000 0000 0100 0000 0100 0000  ................
+00000110: 0100 0000 0100 0000 7469 6666 6669 6c65  ........tifffile
+00000120: 2e70 7900 0000 0000 0000 0000 0000 0000  .py.............
+00000130: 0101 0101 0101 0101 0101 0101 0101 0101  ................
+00000140: 0101 0101 0101 0101 0101 0101 0101 0101  ................
+00000150: 0101 0101 0101 0101 0101 0101 0101 0101  ................
+00000160: 0101 0101 0101 0101 0101 0101 0101 0101  ................
+```
 
 
 ## A sad story
 
-xkcd
+* In the 90's - 2000's, MetaMorph software dominates the industry, has its own 'format'
 
-OME to the rescue
+. . .
+
+* Eventually, constructors build their own software, try to impose it, how?
+
+. . .
+
+
+> $\Rightarrow$ Lots of incompatible & proprietary formats
+
+
+
+## OME to the rescue
+
 
 > «It is possible to interpret images only if we know the context in which they were acquired»
 
-## OME-XML
 
 
-### XML
+## The OME-TIFF Format
 
-### OME-XML
+We can put "things" in the `TIFF` header - so why not all the metadata we can think off?
+
+. . .
+
+> This became a [standard](https://docs.openmicroscopy.org/ome-model/6.0.0/ome-tiff/index.html#support)
+
+
+
+## The whole schema
+
+Is available [here](https://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd)
+
+. . .
 
 Look for the important points you thought of.
+
+. . .
 
 What do you think of XML?
 
 
+## In a file
+
+
+```xml
+<Image ID="Image:0" Name="Excy2_4.6.+12.lif [Excy2 4.6 - Phall CD24 Org 2]">
+  <AcquisitionDate>2016-05-20T13:08:29
+  </AcquisitionDate>
+<ImagingEnvironment/>
+<Pixels BigEndian="true"
+        DimensionOrder="XYCZT"
+        ID="Pixels:0"
+        Interleaved="false"
+        PhysicalSizeX="0.4814710371819961"
+        PhysicalSizeXUnit="µm"
+        PhysicalSizeY="0.4814710371819961"
+        PhysicalSizeYUnit="µm"
+        SignificantBits="8"
+        SizeC="4"
+        SizeT="1"
+        SizeX="512"
+        SizeY="512"
+...
+```
+
+See more details [here](https://docs.openmicroscopy.org/ome-model/6.0.0/ome-tiff/specification.html)
+
+
 ### Limits to OME-XML
 
-* What did you say a microscope image was?
+. . .
 
-* image.sc posts
+What did you say a microscope image was?
+
+. . .
+
 
 
 ### The future: how to define flexible, "just general enough" file formats.
+
+
 
 Let's look at ZARR
 
@@ -310,32 +468,118 @@ Let's look at ZARR
 
 ## One DB system to rule them all: OMERO
 
+* Postgresql based
+* Lots of [features](https://www.openmicroscopy.org/omero/scientists/)
+
+
+[We happen to have one here](https://centur-engineering.univ-amu.fr)
+
+
+
 ## The Contender Cytomine (but still using BioFormats!)
 
-https://forum.image.sc/t/centralised-online-image-processing-solutions-platforms/20779
+
+Cytomine is oriented towards _collaboration_ after the image is produced.
 
 
-# Using OMERO - A tour
-
-## Let's go into some gritty details
-
-## Web viewer
-
-> What info do you see?
-
-> Can you find the metadata we said were important?
-
-> What's the difference with B. Habermann examples?
+![Cytomine Pipeline](https://doc.cytomine.org/dl42?display)
 
 
 # Public microscopy image databases
 
-## The Allen Institute
-
 ## A word on FAIR
 
-## The IDR
+* We need to be able to **reuse** data
+* We must be able to do this automatically
+
+Published [here](https://www.nature.com/articles/sdata201618)
+
+
+> Findability
+
+> Accessibility
+
+> Interoperability
+
+> Reusability
+
+
+## A non exhaustive list:
+
+* [HDBR Atlas](http://hdbratlas.org/)
+* [ASCB CELL Image Library](http://www.cellimagelibrary.org/)
+* [Harvard Medical School LINCS Project](http://lincs.hms.harvard.edu/)
+
+[For example](https://lincs.hms.harvard.edu/db/datasets/20002/results#)
+
+------------
+
+* [Stowers Institute Original Data Repository](ttp://www.stowers.org/research/publications/odr)
+* [JCB DataViewer](ttp://jcb-dataviewer.rupress.org/)
 
 
 
-https://www.princetoninstruments.com/learn/camera-fundamentals/
+## The Allen Institute
+
+### Brain Atlases
+
+[See here](https://portal.brain-map.org/)
+
+
+###  The Allen Cell explorer
+
+* Tries to know all the possible states of stem cells
+
+![The strategy](https://www.allencell.org/uploads/8/1/9/9/81996008/whole-white-complex-1_orig.png)
+
+
+* Created an extensive [catalog](https://www.allencell.org/cell-catalog.html) of cell structures
+
+## 4D Nucleome
+
+
+A platform to search, visualize, and download nucleomics data.
+
+Icludes [microscopy data](https://data.4dnucleome.org/microscopy-data-overview)
+
+## European initiatives
+
+Under the [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/)
+
+
+* [EMBL EMPIAR](https://www.ebi.ac.uk/pdbe/emdb/empiar/])
+* [IDR](https://idr.openmicroscopy.org)
+
+
+## Conclusion
+
+-----------
+
+Already a lot of ressources **but**
+
+- Little actual re-use for now
+
+. . .
+
+- Not used every where (biologists are still reluctant to share)
+
+. . .
+
+
+------------
+
+
+What I haven't talked about
+
+- Automated image analysis
+- [Kaggle](https://www.kaggle.com/competitions) & gameification
+- Segmentation [challenges](https://www.meduniwien.ac.at/hp/fileadmin/ipa/NEWS/Research_News/Kumar_et_al_2019.pdf)
+
+
+------------
+
+
+Next week:
+
+* Hands on with IDR and our local OMERO
+* Some automated analysis
