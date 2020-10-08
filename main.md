@@ -3,20 +3,14 @@ title: Bio-image databases
 author: Guillaume Gay, CENTURI
 date: 9 Octobre 2020
 fontsize: 10pt
-width: 1080
+width: 800
 height: 720
-center: false
+center: true
 ...
 
 
-<link rel="stylesheet" href="dist/theme/black.css">
+> We are here to talk about microscopy image databases. We are not going to talk a lot about the "database" part of that, because a lot has to be said about microscopy and images before that is more important.
 
-
-# Intro
-
-> We are here to talk about micrscopy image databases. We are not going to talk a lot about the "database" part of that, because a lot has to be said about microscopy and images before that is more important.
-
----------
 
 
 ## Why you are right to take this course
@@ -44,9 +38,7 @@ I also studied how light goes through small apertures:
 
 ---------
 
-I used a CCD camera from the late '90s:
-
-![The good old TEA512](images/CCD_princetonTEA512.jpeg)
+![I used a CCD camera from the late '90s](images/CCD_princetonTEA512.jpeg)
 
 
 ### Postdocs
@@ -72,6 +64,10 @@ I worked on microscope images of the fission yeast _Schizosaccharomyces pombe_
 
 > Very rich data : relaxation speeds, diffusion/binding coefficients...
 
+
+---------
+
+
 I used these to model  mechanical aspects of mitosis.
 
 
@@ -82,9 +78,10 @@ I used these to model  mechanical aspects of mitosis.
 
 ### Freelance
 
-In 2012 I started working as a freelance to do data analysis and modeling for biology research and biotech. Worked for various labs, for L'Oréal, for a small company on a method to measure eyesight with VR gogles...
+In 2012 I started working as a freelance to do data analysis and modeling for biology research and biotech. Worked for various labs, for L'Oréal, for a small company on a method to measure eyesight with a VR headset...
 
-. . .
+------------
+
 
 ![Model of fold formation](images/fold_ellipsoid.gif)
 
@@ -93,11 +90,29 @@ One of my main project is [tyssue](https://github.com/damcb/tyssue) which is a *
 
 ## CENTURI
 
+
 ![I'm part of the multi-engineering platform](images/centuri.png)
 
 
-
 ## Course outline
+
+
+1. What you learned on the first course
+
+. . .
+
+2. Some history of microscopy techniques
+
+. . .
+
+
+3. The digital image (data and metadata)
+
+. . .
+
+
+4. Databases (at last)
+
 
 
 # What have you learned before?
@@ -140,8 +155,6 @@ For me:
 ## Early Microscopes
 
 
-### Single lens
-
 [Antonie van Leewenhoek (1632–1723)](https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek)
 
 :::::::::::::: {.columns}
@@ -154,8 +167,8 @@ For me:
 ::::::::::::::
 
 
+-----------------------
 
-### Compound lenses
 
 [Robert Hooke (1635-1703)](https://en.wikipedia.org/wiki/Robert_Hooke)
 
@@ -164,7 +177,7 @@ For me:
 
 First detector is the **eye**, data is registered through simple drawings.
 
-### XXth century
+---------------------
 
 [Santiago Ramón y Cajal (1852 - 1934)](https://en.wikipedia.org/wiki/Santiago_Ramón_y_Cajal)
 
@@ -460,13 +473,14 @@ What did you say a microscope image was?
 
 
 
-Let's look at ZARR
-
+Let's look at [ZARR](https://forum.image.sc/t/next-generation-file-formats-for-bioimaging/31361)
 
 
 # Finally Databases!
 
+
 ## One DB system to rule them all: OMERO
+
 
 * Postgresql based
 * Lots of [features](https://www.openmicroscopy.org/omero/scientists/)
@@ -482,7 +496,10 @@ Let's look at ZARR
 Cytomine is oriented towards _collaboration_ after the image is produced.
 
 
-![Cytomine Pipeline](https://doc.cytomine.org/dl42?display)
+---------------
+
+
+![The  Cytomine Pipeline](https://doc.cytomine.org/dl42?display)
 
 
 # Public microscopy image databases
