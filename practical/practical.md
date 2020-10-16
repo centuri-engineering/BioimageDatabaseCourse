@@ -26,6 +26,16 @@ author: Guillaume Gay
 
 > Learn to read the documentation!
 
+https://docs.openmicroscopy.org/omero/5.6.3/index.html
+
+https://docs.openmicroscopy.org/omero/5.6.3/developers/Python.html
+
+## Install omero
+
+```
+conda install -c ome omero
+```
+
 
 ## Log in the web client
 
@@ -35,10 +45,12 @@ author: Guillaume Gay
 
 
 
-
 ## Annotate and browse
 
+- setup project / dataset
+
 - Add a tag and a comment
+
 - Search for DAPI images
 
 
@@ -53,10 +65,9 @@ author: Guillaume Gay
 
 
 
-
 # An example of automated workflow
 
-Loop over all images in the dataset
+Loop over all images in the dataset, compute average intensity per plane.
 
 
 
@@ -80,13 +91,13 @@ Loop over all images in the dataset
 
 
 
-## API - Download data
+## IDR public API
 
-https://idr.openmicroscopy.org/webclient/img_detail/3414065/?dataset=706
+### From this article, find the original data in IDR (1/5)
 
-https://idr.openmicroscopy.org/webclient/img_detail/3414062/?dataset=705
-
-https://idr.openmicroscopy.org/webclient/?show=image-9844380
+https://elifesciences.org/articles/55913
 
 
-## API - Read metadata
+### Write a code that connects to IDR (2/5) and read metadata from one of the above datasets (2/5)
+
+### If we have time, use napari (or the new ipygani) to display the data
