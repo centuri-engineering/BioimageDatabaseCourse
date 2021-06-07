@@ -2,19 +2,49 @@
 html:
 	rm -Rf build_html
 	mkdir build_html
-	ln -s ../../reveal.js build_html
+	ln -s ~/Presentations/reveal.js build_html
 	cp -R images build_html
-	pandoc -t revealjs -V theme=solarized -s main.md -o build_html/main.html --slide-level 3 --mathjax
+	cp custom.css build_html
+	pandoc --citeproc \
+		   -t revealjs \
+		   -V theme=solarized \
+	       -V disableLayout=true \
+		   -c custom.css \
+	       --csl=https://www.zotero.org/styles/current-genetics?source=1 \
+		   -s main.md \
+		   -o build_html/main.html \
+           --slide-level 3 \
+	       --mathjax -i
 
 beamer:
 	rm -Rf build_pdf
 	mkdir build_pdf
 	cp main.md build_pdf
-	cp -R images build_html
+	cp tyssue.bib build_pdf
+	cp -R images build_pdf
 	cd build_pdf
-	pandoc -t beamer --template /usr/share/pandoc/data/templates/default.latex \
-		--pdf-engine lualatex --slide-level 3 main.md -o main.pdf
-	cd ..
+	pandoc --citeproc \
+		   -t beamer \
+		   --pdf-engine lualatex \
+	       --slide-level 3 \
+           -s main.md \
+		   -o main.pdf
+
+debug:
+	rm -Rf build_pdf
+	mkdir build_pdf
+	cp main.md build_pdf
+	cp tyssue.bib build_pdf
+	cp -R images build_pdf
+	cd build_pdf
+	pandoc --citeproc \
+		   --verbose \
+		   -t beamer \
+		   --pdf-engine lualatex \
+	       --slide-level 3 \
+           -s main.md \
+		   -o main.pdf
+
 
 clean:
 	rm -Rf build_html
