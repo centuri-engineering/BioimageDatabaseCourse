@@ -11,6 +11,12 @@ center: true
 
 > We are here to talk about microscopy image databases. We are not going to talk a lot about the "database" part of that, because a lot has to be said about microscopy and images before that is more important.
 
+----
+
+Follow this course here:
+
+![[centuri-engineering.univ-amu.fr/BioImageDB/](https://centuri-engineering.univ-amu.fr/BioImageDB/main.html)](images/QR_link.svg){ width=40% }
+
 ## Why you should care?
 
 ![[An excel file does not consitute a database](https://www.bbc.com/news/uk-54422505)](images/excel_error.png)

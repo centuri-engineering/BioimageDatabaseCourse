@@ -16,6 +16,25 @@ html:
            --slide-level 3 \
 	       --mathjax -i
 
+deploy:
+	rm -Rf build_html
+	mkdir build_html
+	ln -s ~/Presentations/reveal.js build_html
+	cp -R images build_html
+	cp custom.css build_html
+	pandoc --citeproc \
+		   -t revealjs \
+		   -V theme=solarized \
+	       -V disableLayout=true \
+		   -c custom.css \
+	       --csl=https://www.zotero.org/styles/current-genetics?source=1 \
+		   -s main.md \
+		   -o build_html/main.html \
+           --slide-level 3 \
+	       --mathjax -i
+	rsync -avvz -e "ssh -p 8012" build_html/ $(HOST):www/BioImageDB
+
+
 beamer:
 	rm -Rf build_pdf
 	mkdir build_pdf
